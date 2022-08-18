@@ -6,10 +6,15 @@
 SSH, TELNET is not secure ,ssh is more secure than telnet
 #ip a 
 #ssh admin@192.168.0.1 ( to connect a  linux machine)
-login into a local and remote servers,we can login using RDP ,VNC,SSH.
+login into a local and remote servers,we can login using RDP ,VNC,SSH .
 
 #apropos director (using apropos we can get know usage of command )
 #man command is used list the usage of commands (EX: #man ls)
-
-
+# using man command we can findout any command usage
+# man ssh | grep "version"
+# ssh -V
+hostnamectl command is used to control the system hostname.
+mandb command is used If the apropos command does not work, because your manual pages are not indexed.
+ssh -v alex@localhost -- command is used to show the verbose output.
+if apropos is not working then we need to update mandb using command sudo mandb
 
