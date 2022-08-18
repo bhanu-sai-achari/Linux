@@ -1,0 +1,15 @@
+#login to linux system
+1. console
+2. virtual terminal
+3. terminal Emulator
+--------------
+SSH, TELNET is not secure ,ssh is more secure than telnet
+#ip a 
+#ssh admin@192.168.0.1 ( to connect a  linux machine)
+login into a local and remote servers,we can login using RDP ,VNC,SSH.
+
+#apropos director (using apropos we can get know usage of command )
+#man command is used list the usage of commands (EX: #man ls)
+
+
+
