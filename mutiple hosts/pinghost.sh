@@ -11,3 +11,4 @@ do
     echo "$ip unable to reach server or ping not working"
     fi
 done
+
