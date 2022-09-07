@@ -1,2 +1,7 @@
 # ! / bin / bash
-find / root / scripts / realtime - scripts -ntime +90 -exec mv ( ) ( ) .old \ ;
+#Author:Bhanu
+#Script to take backup of file +90 is for 90 days files 
+find / root /bhanu -mtime +90 -exec mv {} {} .old \;
+
+#script to delete 90 days files 
+find / root /bhanu -mtime +90 -exec rm_ { } \;
