@@ -47,10 +47,6 @@ h – Move cursor left
 l – Move cursor right
 :w – Save the file but keep it open
 :q – Quit without saving
-
-
-
-
 :wq – Save the file and quit
 ----------------------------------------------------
 
