@@ -1,22 +1,3 @@
-#login to linux system
-1. console
-2. virtual terminal
-3. terminal Emulator
---------------
-SSH, TELNET is not secure ,ssh is more secure than telnet
-#ip a 
-#ssh admin@192.168.0.1 ( to connect a  linux machine)
-login into a local and remote servers,we can login using RDP ,VNC,SSH .
-
-#apropos director (using apropos we can get know usage of command )
-#man command is used list the usage of commands (EX: #man ls)
-# using man command we can findout any command usage
-# man ssh | grep "version"
-# ssh -V
-hostnamectl command is used to control the system hostname.
-mandb command is used If the apropos command does not work, because your manual pages are not indexed.
-ssh -v alex@localhost -- command is used to show the verbose output.
-if apropos is not working then we need to update mandb using command sudo mandb
 -------------------------------------------------------------------------
 Vi editor
 
@@ -49,4 +30,140 @@ l – Move cursor right
 :q – Quit without saving
 :wq – Save the file and quit
 ----------------------------------------------------
+List of commands 
+
+#ls - to list files in directory 
+#cd - change directory 
+#who - list which users are connected to system
+#iostat - input/output statistics for devices and partitions
+#uname - it will givve os name ,
+#uname -a -- it will displays the kernal version 
+#mkdir - to create a directory
+#hostname - displays hostname of  system
+#man ls 
+#apropos ls
+#whatis ls 
+------------------------
+#who -b -- bootsystem info
+#who -l -- list of all logins
+#uname -- to check system information
+#cat /etc/osrelease -- os version details
+#date -- system date
+#cal - calender
+#date;cal;ls; -- running multiple commands using ; &&
+#alias hack="cd /root/bhanu/hacked ; ls "
+#unalias hack   --- to remove alias
+
+How to create new directory 
+#mkdir testing
+#mkdir test1 test2 test3
+
+To create sub directory 
+#mkdir -p /test/exam
+
+Remove directory
+#rmdir -rf text1 
+
+Copy directory
+#cp -r test1 test2 
+change name of directory
+#mv test1 test3
+#wc filename -- number of words in character,lines
+#cat f1.txt --- how to read a file
+#tac f1.txt -- read file in reverse order
+#more -s filename 
+#less 
+#head 
+#tail 
+#tail -f filename --- realtime logs viewing 
+---------------------------------------------------------------------------
+Server is not reachable 
+step 1 : check by running ping command
+step 2 : nslookup hostname  
+vi /etc/hosts ---add servername
+DNS server info : 
+vi /etc/resolve.conf
+vi /etc/nsswitch.conf
+ping gateway and check 
+#netstat -rnv
+step 3 : 
+traceroute hostname --- check reachable or not 
+disable firewall or selinux
+iptables -L -n 
+---------------------------------------------------------------------------------------
+Troubleshooting issue 
+Bootup isssues --- #dmesg 
+to check cpu resource
+#cat /proc/cpuinfo
+#free - h --- memory space
+#lsblk or lshw --- hardware configuartion , block devices
+#lspci,lsusb  ---isplays information about each PCI bus and usb on the system 
+#yum search lsusb ---- to search package
+#yum info lsblk or htttpd --- it will installed package information
+#yum install httpd ---- to install any package 
+#rpm -qa | grep -i httpd 
+#yum remove  --- it will remove all dependencies 
+#rpm -e --- paricular package 
+#ssh user@ip 
+to change ssh port ( go to /etc/ssh/sshd-config)
+# ssh -p port user@ip
+#telnet ip (notsecure)
+----------------------------------------------------
+compressing files 
+#tar -cvf 
+#tar -xvf xyz.tar
+#tar -cvf xyz.tar source 
+#gzip filename
+To search a file 
+#grep -i "filename"
+#find / -name test*
+#updatedb
+#locate filename
+
+To copy files to local to remote or remote to local 
+#scp abc root@ip:/temp/
+#rsync -a sourcedir destinationDir
+----------------------------------------------------
+Process commands 
+#ps -ef 
+#pstree
+#pmap -x 558 --to check memory of Process
+#top --- all Process
+#kill 
+#pkill 
+#lsof --list all opened process 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
