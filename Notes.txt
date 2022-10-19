@@ -132,6 +132,34 @@ Process commands
 #kill 
 #pkill 
 #lsof --list all opened process 
+#chmod 777 abc 
+#chown nagios abc -- user permission for file 
+#chown nagios:montioring abc ---- group permission and user
+#uptime - how many days system is running 
+#last reboot -- last rebooted system
+#timedate ctl --- system date and time 
+#ifconfig --- list ip address 
+#ip addr show --it will display ip and interface
+#ip address add -- add ip address
+#netstat -nultp -- it will show listening  active ports 
+#dig google.com -- DNS information
+#usermod -aG group username --- add user to particular group
+#df -h --- all drives usage (disk usage)
+#df -i --- inodes
+#fdisk -l --- it will display file usages
+#du 
+#findmnt -- to check which filesystem is mounted 
+
+Links -- Hardlinks and symbolic links 
+
+hard links --- it creates copy of file and even though source is deleted it can be viewed , hardlinks cannot be created on direcory
+
+#ln source destination
+
+Symbolic links are like a windows shortcuts -- it is point to another file or directory in any file system. source file is deleted and it cannot be viewed
+
+#ln -s source destination
+---------------------------------------------------------------------
 
 
 
